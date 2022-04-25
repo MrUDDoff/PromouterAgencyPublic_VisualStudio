@@ -34,9 +34,9 @@ namespace WindowsFormsApp1
 
             SqlDataAdapter adapter = new SqlDataAdapter();
 
-            SqlCommand command = new SqlCommand("select * from Пользователи where логин = @UL and пароль = @P", db.getConnection());
+            SqlCommand command = new SqlCommand("select * from Пользователи where логин = @UL and пароль = @UP", db.getConnection());
             command.Parameters.Add("@UL", SqlDbType.VarChar).Value = loginField.Text;
-            command.Parameters.Add("@P", SqlDbType.VarChar).Value = passField.Text;
+            command.Parameters.Add("@UP", SqlDbType.VarChar).Value = passField.Text;
             adapter.SelectCommand = command;
 
             DataTable table = new DataTable();
@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
 
             if(table.Rows.Count>0)
             {
+                MessageBox.Show("Авторизация прошла успешно!");
                 if (table.Rows[0].Field<int>("idРоль") == 1)
                 {
                     this.Hide();
@@ -56,6 +57,10 @@ namespace WindowsFormsApp1
                     Formmod formmod = new Formmod();
                     formmod.Show();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Повторите попытку!");
             }
         }
 
