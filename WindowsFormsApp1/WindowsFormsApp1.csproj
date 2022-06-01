@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FE896BB-2442-4C04-BC2C-12D571A3DB28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\user\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="akciitexnikumDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>akciitexnikumDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="finemenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finemenuForm.Designer.cs">
+      <DependentUpon>finemenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\editplacesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\editplacesForm.Designer.cs">
+      <DependentUpon>editplacesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\editstockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\editstockForm.Designer.cs">
+      <DependentUpon>editstockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\managerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\managerForm.Designer.cs">
+      <DependentUpon>managerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\newstockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\newstockForm.Designer.cs">
+      <DependentUpon>newstockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\placesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\placesForm.Designer.cs">
+      <DependentUpon>placesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="promouterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="promouterForm.Designer.cs">
+      <DependentUpon>promouterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperVaisor\supervaisorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperVaisor\supervaisorForm.Designer.cs">
+      <DependentUpon>supervaisorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomConfig.cs" />
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finemenuForm.resx">
+      <DependentUpon>finemenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\editplacesForm.resx">
+      <DependentUpon>editplacesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\editstockForm.resx">
+      <DependentUpon>editstockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\managerForm.resx">
+      <DependentUpon>managerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\newstockForm.resx">
+      <DependentUpon>newstockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\placesForm.resx">
+      <DependentUpon>placesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="promouterForm.resx">
+      <DependentUpon>promouterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperVaisor\supervaisorForm.resx">
+      <DependentUpon>supervaisorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="akciitexnikumDataSet.xsc">
+      <DependentUpon>akciitexnikumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="akciitexnikumDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>akciitexnikumDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="akciitexnikumDataSet.xss">
+      <DependentUpon>akciitexnikumDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
